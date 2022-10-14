@@ -1,4 +1,4 @@
-import { ResponseError } from "../error_handlers/response_error";
+const { ResponseError } = require("../error_handlers/response_error");
 
 require('dotenv').config();
 

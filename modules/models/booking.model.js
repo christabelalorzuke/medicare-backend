@@ -20,6 +20,8 @@ const booking = new Schema({
         enum: ["confirmed", "pending", "cancelled"],
         required: true
     }
-});
+},
+{ timestamps: true }
+);
 
 module.exports = model("Booking", booking);

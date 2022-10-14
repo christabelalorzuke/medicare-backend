@@ -8,19 +8,15 @@ const baseUserModel = {
     required: true,
     unique: true,
   },
-  userName: {
-    type: String,
-    required: true,
-    unique: true,
-  },
   password: {
     type: String,
     required: true,
     minLength: [6, "Password is too short"],
   },
-  gender: {
+  sex: {
     type: String,
     required: true,
+    enum: ["male", "female"],
   },
   age: {
     type: Number,
@@ -36,12 +32,12 @@ const baseUserModel = {
   },
   profilePicture: {
     imageUrl: String,
-    imageId: String
+    imageId: String,
   },
   typeOfUser: {
     type: String,
-    enum: ["doctor, patient"],
-    required: true
+    enum: ["doctor", "patient"],
+    required: true,
   }
 };
 
