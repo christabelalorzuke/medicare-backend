@@ -4,7 +4,7 @@ const {connect} = require("mongoose");
 
 const connectDb = async () => {
     try {
-        await connect("https://data.mongodb-api.com/app/data-jgzuo/endpoint/data/v1" , {
+        await connect("mongodb+srv://medicare-admin:<admin5142>@cluster0.jntre5e.mongodb.net/?retryWrites=true&w=majority" , {
             dbName: "medicare"
         })
         console.log("Database connected successfully!")
